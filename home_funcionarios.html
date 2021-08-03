@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title> Cadasto de Funcionarios </title>
+</head>
+<body>
+    <form name ="frm_veiculos" method="POST">
+    <hr><center> Cadastro de funcionarios - ADSVA4 - Nome do aluno: Lucas Santana Saturnino</center><hr><br>
+
+    <fieldset>
+        <legend>Dados do Funcionario</legend>
+        N° Registro: <br>
+        <input type ="text" name="txt_registro" size="10" maxlength="40" ><br>
+        Nome do Funcionario: <br>
+        <input type ="text" name="txt_nome_func" size="30" maxlength="40" > &nbsp; &nbsp;
+        Data de Admissão: 
+        <input type ="text" name="txt_dt_admissao" size="10" maxlength="40" ><br>
+        Cargo: <br>
+        <select name="txt_cargo">
+            <option value = "Encarregado TI">Encarregado TI</option>
+            <option value = "Auxiliar de limpeza">Auxiliar de Limpeza</option>
+            <option value = "Gerente do RH">Gerente do RH</option>
+            <option value = "Padeiro">Padeiro</option>
+            <option value = "Ambulante">Ambulante</option>
+            <option value = "Doceiro">Doceiro</option>
+        </select> &nbsp; &nbsp;
+        QTD de Salarios Minimos:
+        <input type ="text" name="txt_salarios" size="10" maxlength="40" ><br>
+    
+    </fieldset>
+    <center>
+        <input type="submit" name="btn_cadastrar" value="Cadastrar" onclick="document.frm_veiculos.action='gravar.php'">
+        <input type="submit" name="btn_listagem"value="listagem" onclick="document.frm_veiculos.action='listagem.php'"><br>
+    </center>
+    </form>
+</body>
+</html>
